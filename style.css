@@ -109,13 +109,15 @@ img {
     color: #6415ff;
     letter-spacing: 1.6px;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
 .section__title {
     font-size: 48px;
     font-weight: 900;
-    color: rgb(36 62 99);
+    color: rgb(36, 62, 99);
     line-height: 1.5;
+    margin: 16px 0;
     letter-spacing: 0.025em;
 }
 
@@ -343,7 +345,7 @@ header .row {
 }
 
 .header__img--wrapper {
-    width: calc(100%-40%);
+    width: calc(100% - 40%);
 }
 
 .header__img {
@@ -625,6 +627,15 @@ PRICING ↓
     border-top-right-radius: 0.5rem;
 }
 
+.plan:nth-child(odd) .plan__name, .plan:nth-child(odd) .plan__price, .plan:nth-child(odd) .plan__target {
+    color: #1a202c;
+}
+
+.plan__name, .plan__price, .plan__duration {
+    font-weight: bold;
+    line-height: 1.625;
+}
+
 .plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__btn {
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
@@ -641,6 +652,11 @@ PRICING ↓
 .plan:nth-child(2) .plan__middle {
     border-top: 2px solid rgb(102, 126, 234);
     border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+.plan:nth-child(1) .plan__middle, .plan:nth-child(3) .plan__middle {
+    border-top: 2px solid rgb(229, 231, 235);
+    border-bottom: 2px solid rgb(229, 231, 235);
 }
 
 .plan:nth-child(2) .plan__btn {
@@ -677,8 +693,8 @@ PRICING ↓
 }
 
 .plan__middle {
-    margin-left: -2rem;
-    margin-right: -2rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: flex;
     flex: 1 1 0%;
     flex-direction: column;
@@ -793,20 +809,20 @@ TESTIMONIALS ↓
     margin-left: 24px;
 }
 
-.testimonial__name {
+.testimonials__name {
     color: #4a5568;
     line-height: 1.625;
     font-size: 1.25rem;
     font-weight: 700;
 }
 
-.testimonial__role {
+.testimonials__role {
     color: #7c8ba1;
     font-weight: 500;
     line-height: 1.5;
 }
 
-.testimonial__buttons {
+.testimonials__buttons {
     display: flex;
     align-items: center;
 }
@@ -850,6 +866,16 @@ START / CALL TO ACTION ↓
 #start .row {
     position: relative;
     overflow: hidden;
+}
+
+.start__row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .start__title {
